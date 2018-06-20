@@ -1,0 +1,10 @@
+create keyspace springbootsandbox with replication={'class':'SimpleStrategy', 'replication_factor':1};
+
+use springbootsandbox;
+ 
+CREATE TABLE product (
+   id text PRIMARY KEY,
+   description text,
+   imageUrl text,
+   price decimal
+);
